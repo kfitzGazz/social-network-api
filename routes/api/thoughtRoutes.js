@@ -19,10 +19,10 @@ router
   .put(updateThought)
   .delete(deleteThought);
 
-// /api/Thoughts/:ThoughtId/responses
+// /api/Thoughts/:ThoughtId/reactions
 router.route('/:thoughtId/reactions').post(addReactions);
 
-// /api/Thoughts/:ThoughtId/responses/:responseId
+// /api/Thoughts/:ThoughtId/reactions/:reactionId
 router.route('/:thoughtId/reactions/:reactionId').delete(removeReactions);
 
 module.exports = router;
